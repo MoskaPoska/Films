@@ -16,7 +16,7 @@ namespace Films
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string url = "http://www.omdbapi.com/?i=tt3896198&apikey=ae3fec7d" + textBox1.Text + "&y=" + textBox2.Text;
+            string url = "http://www.omdbapi.com/?i=tt3896198&apikey=ae3fec7d&t=" + textBox1.Text + "&y=" + textBox2.Text;
             using (WebClient wc = new WebClient())
             {
                 string json = wc.DownloadString(url);
